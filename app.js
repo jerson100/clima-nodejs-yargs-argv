@@ -40,7 +40,7 @@ request(options, function (error, response, body) {
     }, (error, response, body) => {
         if (error) throw new Error(error);
         const { main: { temp } } = JSON.parse(body);
-        console.log(`La temperatura de ${direccion} es: ${temp}`green);
+        console.log(`La temperatura de ${direccion} es: ${temp}`.green);
     })
 
 });
